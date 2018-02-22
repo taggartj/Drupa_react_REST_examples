@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_install().
+ *
+ * clears ssettings from active config.
+ */
+function react_clean_install() {
+  // Delete active config item.
+  Drupal::configFactory()->getEditable('user.settings')->delete();
+  Drupal::configFactory()->getEditable('user.role.authenticated')->delete();
+  Drupal::configFactory()->getEditable('user.role.anonymous')->delete();
+  Drupal::configFactory()->getEditable('rest.resource.entity.node')->delete();
+  Drupal::configFactory()->getEditable('rest.resource.entity.comment')->delete();
+
+}

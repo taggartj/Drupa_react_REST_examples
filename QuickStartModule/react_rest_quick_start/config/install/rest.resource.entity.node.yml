@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - node
+    - serialization
+    - user
+id: entity.node
+plugin_id: 'entity:node'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - cookie
+    - basic_auth
+dependencies:
+  module:
+    - react_rest_quick_start
+  enforced:
+    module:
+      - react_rest_quick_start

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - comment
+    - hal
+    - serialization
+id: entity.comment
+plugin_id: 'entity:comment'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - basic_auth

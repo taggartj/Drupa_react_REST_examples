@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - file
+    - hal
+    - serialization
+    - user
+id: entity.file
+plugin_id: 'entity:file'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - PATCH
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - basic_auth
+    - cookie

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - user
+id: user_registration
+plugin_id: user_registration
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie
+dependencies:
+  module:
+    - react_rest_quick_start
+  enforced:
+    module:
+      - react_rest_quick_start

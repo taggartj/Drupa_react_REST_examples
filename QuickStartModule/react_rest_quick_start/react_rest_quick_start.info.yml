@@ -1,0 +1,15 @@
+name: 'React Rest Quick start'
+description: 'This module is only to set up required settings and ensure you have modules required.'
+type: module
+core: 8.x
+dependencies:
+  - node
+  - rest
+  - hal
+  - basic_auth
+  - serialization
+  - user
+  - jsonapi
+  - restui
+  - react_clean
+version: 8.x-1.0

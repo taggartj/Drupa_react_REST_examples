@@ -1,0 +1,16 @@
+name: 'React Clean'
+description: 'This module is only to clear the user.settings active config'
+type: module
+core: 8.x
+dependencies:
+  - node
+  - rest
+  - hal
+  - basic_auth
+  - serialization
+  - user
+  - jsonapi
+  - restui
+  - file_entity
+  - token
+version: 8.x-1.0

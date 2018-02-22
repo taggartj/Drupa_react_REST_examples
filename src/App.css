@@ -1,0 +1,40 @@
+body {
+  background-color: #ccc;
+}
+.App {
+  padding-left:10px;
+  padding-right:10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 600px;
+  background: #fff;
+  border-radius: 5px;
+}
+.hidden {
+  display: none;
+}
+
+.footer {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 15s linear;
+  height: 30px;
+  margin-top: 10px;
+}
+.views_articles {
+  border: solid 1px #000;
+}
+.comments {
+  padding: 20px;
+  background-color: beige;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
